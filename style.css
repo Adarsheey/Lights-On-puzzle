@@ -1,0 +1,74 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    margin-top: 30px;
+}
+
+#grid {
+    display: grid;
+    grid-template-columns: repeat(5, 60px);
+    grid-gap: 5px;
+    justify-content: center;
+    margin-bottom: 20px;
+     
+}
+
+.grid-cell {
+    width: 60px;
+    height: 60px;
+    background-color: rgb(0, 0, 0);
+    cursor: pointer;
+    border: 2px solid #333;
+    transition: background-color 0.2s;
+     border-radius: 8px;
+}
+
+.grid-cell.off {
+    background-color: rgb(158, 3, 111);
+}
+
+
+   
+    button {
+    padding: 12px 24px;
+    font-size: 16px;
+    font-weight: bold;
+    color: white;
+    background: linear-gradient(45deg, #4CAF50, #2E7D32);
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
+    cursor: pointer;
+    transition: transform 0.1s ease, background 0.3s ease;
+    margin: 5px;
+}
+
+button:hover {
+    background: linear-gradient(45deg, #66BB6A, #388E3C);
+    transform: scale(1.05);
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:disabled {
+    background: #aaa;
+    cursor: not-allowed;
+}
+
+
+
+
+#message {
+    font-size: 18px;
+    color: green;
+    margin-top: 10px;
+}
+#moveCounter {
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+
+
