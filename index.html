@@ -3,19 +3,61 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-    <title>Lights On - 5x5 Grid</title>
-    <link rel="stylesheet" href="style.css" />
+    <title>Lights Out - Puzzle Game</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            height: 100vh;
+            background-image: url('https://images.unsplash.com/photo-1544193711-09caf25d5813?q=80&w=1138&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D');
+            background-size: cover;
+            background-position: center;
+            color: white;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+        
+        h1 {
+            font-size: 48px;
+            margin-bottom: 20px;
+            text-shadow: 2px 2px 8px rgba(0,0,0,0.7);
+        }
+        
+        p {
+            font-size: 20px;
+            max-width: 600px;
+            margin-bottom: 40px;
+            text-shadow: 1px 1px 6px rgba(0,0,0,0.6);
+        }
+        
+        .play-button {
+            padding: 15px 40px;
+            font-size: 18px;
+            font-weight: bold;
+            color: white;
+            background-color: #28a745;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+            text-decoration: none;
+        }
+        
+        .play-button:hover {
+            background-color: #218838;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <h1>Lights On - 5x5 Puzzle</h1>
-      <p>Make all the grid lights Glow to win !</p>
-    <div id="grid"></div>
-    <button onclick="resetGame()">Reset</button>
-    <button onclick="undoMove()">Undo</button>
-    <p id="moveCounter">Moves: 0/20</p>
-    <p id="message"></p>
-
-    <script src="script.js"></script>
+    <h1>Lights Out!</h1>
+    <p>Challenge your mind with this fun and addictive puzzle game. Can you turn off all the lights? Plan your moves carefully and solve it before the time runs out!</p>
+    <a href="game.html" class="play-button">Play Now</a>
 </body>
 </html>
+
+
 
