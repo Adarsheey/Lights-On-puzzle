@@ -60,9 +60,16 @@ function renderGrid() {
         for (let c = 0; c < cols; c++) {
             const cell = document.createElement("div");
             cell.classList.add("grid-cell");
-            if (grid[r][c] === 0) {
-                cell.classList.add("off");
-            }
+            
+            // Inside render function
+if (grid[r][c] === 1) {
+    cell.classList.add("on");
+    cell.classList.remove("off");
+} else {
+    cell.classList.add("off");
+    cell.classList.remove("on");
+}
+
             cell.addEventListener("click", () => {
                 if (moveCount >= moveLimit) return; // No more moves allowed
                 // Save current state before move
